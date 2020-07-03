@@ -1,0 +1,14 @@
+<h1 style="color: purple">Welcome to the Category component</h1>
+
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <label>
+        Id:
+    </label>
+    <input type="text" name="id" [(ngModel)]=cat.id>
+
+    <label>
+        Name:
+    </label>
+    <input type="text" name="name" [(ngModel)]=cat.name>
+    <input type="submit" value="Send Data">
+</form>

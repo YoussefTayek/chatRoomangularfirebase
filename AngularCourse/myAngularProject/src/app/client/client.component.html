@@ -1,0 +1,24 @@
+<h1 style="color: purple">Welcome to the Client component</h1>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Name:</label>
+        <input type="text" formControlName="name">
+    </div>
+
+    <div>
+        <label>Age:</label>
+        <input type="text"  formControlName="age">
+    </div>
+
+    <div>
+        <label>Adres:</label>
+        <input type="text" formControlName="adres">
+    </div>
+
+    <div>
+        <label>Job:</label>
+        <input type="text" formControlName="job">
+    </div>
+
+    <input type="submit" value="Send Form Data">
+</form>
